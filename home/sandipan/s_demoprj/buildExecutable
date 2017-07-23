@@ -1,0 +1,6 @@
+cd /
+cd /home/sandipan/s_demoprj
+docker stop s_demoprj
+docker rm s_demoprj
+docker build -t hello-world /home/sandipan/
+docker run -d --name s_demoprj -p 80:80 -v /home/sandipan/s_demoprj/Src/:/var/www/html s_demoprj
